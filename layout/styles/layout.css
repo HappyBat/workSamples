@@ -21,7 +21,8 @@ File: Layout CSS
 .row4, .row4 a{}
 .row5, .row5 a{}
 
-
+h2{padding-top:30px;font-weight:bold;}
+article{font-size:20px}
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:20px 0; font-size:.8rem; text-transform:uppercase;}
@@ -60,8 +61,11 @@ File: Layout CSS
 #pageintro article p{max-width:65%; line-height:2rem;}
 #pageintro .heading{margin-bottom:20px; font-size:4rem;}
 #pageintro footer{margin-top:50px;}
-
-
+#textImage{
+	position: relative;
+	width: 100%;
+	height:100%;
+}
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
 .container{padding:80px 0;}
@@ -307,43 +311,54 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#A5A6AA; background-color:#161C21;}
-a{color:#B946AD;}
+body{color:#A5A6AA; background-color:rgba(255,255,255,.7);}/*background-color:#161C21*/
+a{color:rgba(0,149,144,255)
+;}
 a:active, a:focus{background:transparent !important;}/* IE10 + 11 Bugfix - prevents grey background */
 hr, .borderedbox{border-color:#D7D7D7;}
 label span{color:#FF0000; background-color:inherit;}
-input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
+input:focus, textarea:focus, *:required:focus{border-color:rgba(0,149,144,255)
+ !important;}
 
 .overlay{color:#FFFFFF; background-color:inherit;}
 .overlay::after{color:inherit; background-color:rgba(0,0,0,.55);}
 .overlay.light{color:#474747;}
 .overlay.light::after{background-color:rgba(255,255,255,.7);}
 
-.coloured{color:#FFFFFF; background-color:#A032AB;}
+.coloured{color:#FFFFFF; background-color:#a3a14a
+;}
 .coloured .btn, .coloured .btn.inverse:hover{color:#FFFFFF; background-color:#161C21; border-color:#161C21;}
 
-.btn, .btn.inverse:hover{color:#FFFFFF; background-color:#B946AD; border-color:#B946AD;}
+.btn, .btn.inverse:hover{color:#FFFFFF; background-color:rgba(0,149,144,255)
+; border-color:rgba(0,149,144,255)
+;}
 .btn:hover, .btn.inverse{color:inherit; background-color:transparent; border-color:inherit;}
+.imgover{padding-bottom:10px}
+.imgover:hover::before{background-color:rgb(109,110,34,.5);/* rgba(0,149,144,255)
+ */}
 
-.imgover:hover::before{background-color:rgba(185,70,173,.5);/* #B946AD */}
 .imgover, .imgover:hover::after{color:#FFFFFF;}
 
-.heading.underline::after{background-color:#A032AB;}
+.heading.underline::after{background-color:#a3a14a
+;}
 
 
 /* Rows */
 .row0{color:#FFFFFF; background-color:#161C21;}
 .row1{color:#FFFFFF; background-color:rgba(0,0,0,.75);}
 .row2{color:#474747; background-color:#F4F4F4;}
-.row3{color:#474747; background-color:#FFFFFF;}
+.row3{color:#474747; background-color:#F4F4F4;}
+.row3White{color:#FFFFFF; background-color:#FFFFFF;}
 .row4{color:#A5A6AA; background-color:#000000;}
 .row5, .row5 a{color:#A5A6AA; background-color:#161C21;}
 
 
 /* Top Bar */
-#topbar #searchform{color:#B946AD;}
+#topbar #searchform{color:rgba(0,149,144,255)
+;}
 #topbar #searchform:hover{}
-#topbar #searchform input{color:#FFFFFF; background:#A032AB;}
+#topbar #searchform input{color:#FFFFFF; background:#a3a14a
+;}
 #topbar #searchform button{color:#FFFFFF; background:transparent;}
 
 
@@ -359,10 +374,12 @@ input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
 #introblocks figure figcaption{color:#FFFFFF; background-color:rgba(0,0,0,.55);}
 
 .imgroup article a{color:inherit;}
-.imgroup article:hover a{color:#B946AD;}
+.imgroup article:hover a{color:rgba(0,149,144,255)
+;}
 
 .team figure{box-shadow:0px 0px 15px rgba(0,0,0,.1);}
-.team figure:hover{color:#FFFFFF; background-color:#B946AD;}
+.team figure:hover{color:#FFFFFF; background-color:rgba(0,149,144,255)
+;}
 
 #testimonials blockquote{color:#FFFFFF; background-color:rgba(255,255,255,.5);}
 #testimonials blockquote::before{color:rgba(0,0,0,.2);}
@@ -391,29 +408,38 @@ input:focus, textarea:focus, *:required:focus{border-color:#B946AD !important;}
 
 #footer input, #footer button{border-color:transparent;}
 #footer input{color:#474747; background-color:rgba(255,255,255,1);}
-#footer input:focus{border-color:#B946AD;}
-#footer button{color:#FFFFFF; background-color:#B946AD;}
+#footer input:focus{border-color:rgba(0,149,144,255)
+;}
+#footer button{color:#FFFFFF; background-color:rgba(0,149,144,255)
+;}
 #footer button:hover{color:inherit; background-color:transparent; border-color:inherit;}
 
 
 /* Navigation */
 #mainav{}
 #mainav li a{color:inherit;}
-#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:#B946AD; background-color:inherit;}
-#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgba(185,70,173,.5);/* #B946AD */ border-color:rgba(185,70,173,.5);}
-#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#B946AD;}
+#mainav .active a, #mainav a:hover, #mainav li:hover > a{color:rgba(0,149,144,255)
+; background-color:inherit;}
+#mainav li li a, #mainav .active li a{color:#FFFFFF; background-color:rgb(109,110,34,.5);/* rgba(0,149,144,255)
+ */ border-color:rgb(109,110,34,.5);}
+#mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:rgba(0,149,144,255)
+;}
 #mainav form select{color:#474747; background-color:#FFFFFF;}
 
 #breadcrumb a{color:inherit; background-color:inherit;}
-#breadcrumb li:last-child a{color:#B946AD;}
+#breadcrumb li:last-child a{color:rgba(0,149,144,255)
+;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
-.container .sidebar nav a:hover{color:#B946AD;}
+.container .sidebar nav a:hover{color:rgba(0,149,144,255)
+;}
 
 .pagination a, .pagination strong{border-color:#D7D7D7;}
-.pagination .current *{color:#FFFFFF; background-color:#B946AD;}
+.pagination .current *{color:#FFFFFF; background-color:rgba(0,149,144,255)
+;}
 
-#backtotop{color:#FFFFFF; background-color:#B946AD;}
+#backtotop{color:#FFFFFF; background-color:rgba(0,149,144,255)
+;}
 
 
 /* Tables + Comments */
@@ -458,7 +484,7 @@ table a, #comments a{background-color:inherit;}
 	#header #logo{margin-top:0;}
 
 	#mainav{}
-	#mainav ul{display:none;}
+	/*#mainav ul{display:none;}*/
 	#mainav form{display:block; margin-top:2px;}
 
 	#breadcrumb{}
