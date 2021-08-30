@@ -22,7 +22,10 @@ File: Layout CSS
 .row5, .row5 a{}
 
 h2{padding-top:30px;font-weight:bold;}
-article{font-size:20px}
+article{font-size:20px;}
+
+#imgHeading{font-weight:bold;font-size:22px}
+
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:20px 0; font-size:.8rem; text-transform:uppercase;}
@@ -138,7 +141,7 @@ article{font-size:20px}
 #latest article .excerpt time strong{padding:12px 0; font-size:18px; border-bottom:1px solid; opacity:.5;}
 #latest article .excerpt time em{padding:8px 0;}
 #latest article .excerpt p{margin:0; padding:0;}
-#latest article footer{text-align:right;}
+#latest article footer{text-align:left;}/*changed from right to left because it looked shitty*/
 
 /* Comments */
 #comments ul{margin:0 0 40px 0; padding:0; list-style:none;}
