@@ -25,7 +25,11 @@ h2{padding-top:30px;font-weight:bold;}
 article{font-size:20px;}
 
 #imgHeading{font-weight:bold;font-size:22px}
-
+.github {
+	border: 1px solid #42dca3;
+	color: #42dca3;
+	background-color: transparent;
+}
 /* Top Bar
 --------------------------------------------------------------------------------------------------------------- */
 #topbar{padding:20px 0; font-size:.8rem; text-transform:uppercase;}
